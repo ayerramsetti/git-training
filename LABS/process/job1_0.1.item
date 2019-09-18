@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
@@ -102,13 +104,100 @@
     <routinesParameter id="_mziMQNo_Eem_26F0DRgnyA" name="TalendStringUtil"/>
     <routinesParameter id="_mzrWMNo_Eem_26F0DRgnyA" name="SQLike"/>
   </parameters>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f0ca2c13-c2ed-4326-958f-efb691d2e955"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ho7R6b3cf/4ybajVdtxEFCj6mBe0ZFVLxnf78veKQRjZqrS/Sor/RXdJl9cb6vuiw48J5Fx0lq5Y
-KZc56MJ8NQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_74303f6a-8a2e-42dd-9512-2e17d82e7d3c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>up+Tk11HgwhojTi54zgLCKl81MwUabhWZ255lPBwBcYtp+JvSGUKestOROyhOpVYjpTuLAhGLw4j
-SG3c4N1C9Q==</DigestValue></Reference></SignedInfo><SignatureValue>BP39n1VNU16VSlEnPiOgo/e0ns8Pmxd6YnLvOPea6o7iHgUQbqxEudUIoQI0qYChKFbYAA8auxiJ
-iDZXhRvJx0AHyHVHupPaheRfvN+B+Um7oDP2UwlvXJRPXmXVDsMzBRjJTQnad+BZdseJs517Sq6Q
-Vwj4WV8oPQb4v6v9+1/uCOjBC9ojXk3QbTpsIJE6MGYMVZ40AoITHcGmvfKXy9Wx36CdVQquoh+J
-tREQ5fjtDVpQejPIaeG+/ONZLNKhOi851UaxQEqJrVZ8dFACu/ZNLR1EmnXuR/sE9Kjfovz/Jie9
-Lr+UMv44u3f5UYEMeryKFAzMxOGZ12mY78MgVw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+  <node componentName="tCreateTable" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tCreateTable_1"/>
+    <elementParameter field="CLOSED_LIST" name="DBTYPE" value="MYSQL"/>
+    <elementParameter field="CLOSED_LIST" name="TABLEACTION" value="CREATE_TABLE"/>
+    <elementParameter field="CHECK" name="CASESENSITIVE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@db10g_test&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE="/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_ACCESS" show="false" value=""/>
+    <elementParameter field="FILE" name="DBFILE_ACCESS" show="false" value="&quot;C:/Users/Student/workspace/in.mdb&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DB_AS400_VERSION" show="false" value="jt400_V6R1.jar"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_AS400" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_DB2" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_FIREBIRD" show="false" value=""/>
+    <elementParameter field="FILE" name="DBFILE_FIREBIRD" show="false" value="&quot;C:/Users/Student/workspace/in.FDB&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="RUNNING_MODE" show="false" value="HSQLDB_SERVER"/>
+    <elementParameter field="CHECK" name="TLS" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="DBPATH_HSQL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_HSQL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATABASE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_INFORMIX" show="false" value=""/>
+    <elementParameter field="TEXT" name="DBSERVER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_INGRES" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_INTERBASE" show="false" value=""/>
+    <elementParameter field="TEXT" name="DBFILE_INTERBASE" show="false" value="&quot;C:/Users/Student/workspace/in.gdb&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="FRAMEWORK_TYPE" show="false" value="EMBEDED"/>
+    <elementParameter field="CHECK" name="CONNECTION_FLAG" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DBNAME_JAVADB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DIRECTORY" name="DBROOTPATH" show="false" value="&quot;&quot;"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_MSSQL" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="MSSQL_DRIVER" show="false" value="JTDS"/>
+    <elementParameter field="CHECK" name="TEMPTABLE" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_MYSQL" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_MYSQL_VERSION" value="MYSQL_5"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_NETEZZA" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_ORACLE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_POSTGRE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_POSTGRE_VERSION" show="false" value="PRIOR_TO_V9"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_POSTGREPLUS" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_SQLITE" show="false" value=""/>
+    <elementParameter field="FILE" name="DBFILE_SQLITE" show="false" value="&quot;C:/Users/Student/workspace/talend.db&quot;"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_SYBASE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_SYBASE_VERSION" show="false" value="SYBSEIQ_16"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_TERADATA" show="false" value=""/>
+    <elementParameter field="TEXT" name="ODBCNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_GREENPLUM" show="false" value=""/>
+    <elementParameter field="CHECK" name="VERTICA_USE_CASCADE" show="false" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERTICA_VERSION" show="false" value="vertica_3.0_jdk_5.jar"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_VERTICA" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_EXASOL" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_REDSHIFT" show="false" value=""/>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
+    <elementParameter field="CLOSED_LIST" name="CREATE_TABLE_TYPE" show="false" value="SET"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;prompt=false&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="VERTICA_CREATE_PROJECTION" show="false" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tCreateTable_1"/>
+  </node>
+  <node componentName="tParseRecordSet" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tParseRecordSet_1"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="RECORDSET_FIELD" value=""/>
+    <elementParameter field="TABLE" name="ATTRIBUTE_TABLE"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tParseRecordSet_1"/>
+  </node>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tCreateTable_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tParseRecordSet_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d96cdc7f-48ee-46fc-b87a-47985dcd439f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>IVYrY2a7pacfxjCi1BFguPHnd5dPjdmYC6mfNrIjfeqjal95l16gIcjkKpjaWTWK3OxNgLuovmvb
+BPA9e7rgOg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b264ae7f-aff2-4ec4-8923-6551ac2b2876"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wCm8snQyxHyKc2YEf+d7CLrzYcHQDjjAa2vZUhxBXmPNM+CXIenQU7b2yMFvJzAP+ByqLCL+Q468
+6JDOBDd4dg==</DigestValue></Reference></SignedInfo><SignatureValue>K8D/OqH9a4Wl2W+0ai0yoqUg9qEN6+97+omT13DnIFJypBMZu/h+0ciYx5tJaMYSGOF3a5B7xyKx
+MgU2Bdx2234yQPiRrIUhJKn0TIP77mHg4xyBvSDxQVo4vBNsBif+tTm5AKObg2+F75ffGgsHG0f6
+3UQK6+7tIM1k0yLGDVD6d+srOc6rPShu/BoGpS/y3xiV+1tyMMq9IDeWr6sPuUHdBMeDhu6QB89u
+Y5D2Yhg30fsOeyGCR83nKQURdQjLoMcHxGFtEEefIQcQkytT65sO78rgXKkmxL8IUQKrgsrZl+m2
+Zn5JGBh3/ZJ74q9QjcxNHD2WiLOei9W0m7EeZQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -132,4 +221,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_74303f6a-8a2e-42dd-9512-2e17d82e7d3c" Target="#_f0ca2c13-c2ed-4326-958f-efb691d2e955"><Timestamp>2019-09-18 18:12:58</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b264ae7f-aff2-4ec4-8923-6551ac2b2876" Target="#_d96cdc7f-48ee-46fc-b87a-47985dcd439f"><Timestamp>2019-09-18 18:19:24</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
