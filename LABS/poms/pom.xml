@@ -83,6 +83,7 @@
     <module>jobs/routes/ErrorHandler/contextscopeerrorhandler_0.1</module>
     <module>jobs/routes/JMStoHTTP/jmstohttp_0.1</module>
     <module>jobs/routes/demorestclientroute_0.1</module>
+    <module>jobs/process/job3_0.1</module>
   </modules>
   <properties>
     <talend.project.name>LABS</talend.project.name>
