@@ -12,6 +12,48 @@
     <module>code/routines</module>
     <module>jobs/process/job1_0.1</module>
     <module>jobs/process/job2_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/PIG/pig_aggregate_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/Advanced_Examples/ApacheWebLog/step_2_hcatalog_load_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/Advanced_Examples/ApacheWebLog/step_4_pig_count_code_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/HIVE/step_2_hive_elt_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/PIG/pig_filterrow_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/PIG/pig_filtercolumns_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/PIG/pig_distinct_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/PIG/pig_rightouterjoin_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/Advanced_Examples/ApacheWebLog/generateweblogfile_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/Advanced_Examples/ApacheWebLog/step_5_pig_count_ip_0.1</module>
+    <module>jobs/process_mr/Hortonworks_Sandbox_Sample/Advanced_Examples/ApacheWebLog/mr_count_code_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/Advanced_Examples/Gov_Spending_Analysis/step_1_load_us_spending_file_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/E2E_hCat_2_Hive/beforee2e_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/Advanced_Examples/ApacheWebLog/step_3_hcatalog_read_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/HIVE/step_1_hive_load_tables_0.1</module>
+    <module>jobs/process/NoSQL_Examples/Cassandra/demo_bigdatacassandra_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/PIG/pig_leftouterjoin_0.1</module>
+    <module>jobs/process_mr/Hortonworks_Sandbox_Sample/Advanced_Examples/Gov_Spending_Analysis/reduceus_spending_file_mr_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/PIG/pig_sort_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/Advanced_Examples/Gov_Spending_Analysis/step_2_us_agency_spending_hive_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/Advanced_Examples/RDBMS_Migratation_SQOOP_EE/step_3x_orchestrator_example_copy_0.1</module>
+    <module>jobs/process/NoSQL_Examples/MongoDB/demo_bigdatamongostaterev_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/Advanced_Examples/ApacheWebLog/step_6_pig_read_result_0.1</module>
+    <module>jobs/process_mr/Hortonworks_Sandbox_Sample/Advanced_Examples/ApacheWebLog/mr_count_ip_4_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/PIG/pig_fullouterjoin_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/HBASE/hbase_input_output_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/PIG/pig_innerjoin_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/PIG/pig_code_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/E2E_hCat_2_Hive/end2end_hcat_hive_0.1</module>
+    <module>jobs/process/NoSQL_Examples/MongoDB/demo_bigdatamongo_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/HIVE/simple_hive_row_input_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/HDFS/hdfs_get_put_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/Advanced_Examples/Gov_Spending_Analysis/x_prep_real_gov_file_for_demo_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/Advanced_Examples/RDBMS_Migratation_SQOOP_EE/step_1_sqoop_mysql_to_hdfs_preparetablelist_copy_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/Advanced_Examples/ApacheWebLog/step_1_hcatalog_create_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/HCATALOG/hcatalog_load_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/PIG/pig_hcatloader_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/Advanced_Examples/RDBMS_Migratation_SQOOP_EE/step_2_sqoop_mysql_to_hdfs_import_copy_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/PIG/pig_cross_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/HDFS/hdfs_input_output_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/HCATALOG/hcatalog_output_0.1</module>
+    <module>jobs/process/Hortonworks_Sandbox_Samples/PIG/pig_hcatstorer_0.1</module>
   </modules>
   <properties>
     <talend.project.name>LABS</talend.project.name>
